@@ -1,16 +1,15 @@
-## Hi there 👋
+## FreeRobux Rewards Website
+Earn Robux by watching ads, completing surveys, and referring friends — easy rewards all in one place!
 
-<!--
-**DoomKangeroo/DoomKangeroo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+How it works
+Watch videos and earn Robux
 
-Here are some ideas to get you started:
+Complete surveys for bigger rewards
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Refer friends to boost your bonuses
+
+Click ads to support and get more rewards
+
+About
+This site is built with GitHub Pages and designed to give you simple ways to earn Robux rewards easily and safely.
+
