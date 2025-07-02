@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Your Robux Rewards Site</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; color: #222; }
+  header { text-align: center; margin-bottom: 30px; }
+  .ad-banner { border: 1px solid #ccc; padding: 20px; margin: 10px 0; text-align: center; background: #fff; }
+  .referral { margin: 20px 0; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 0 6px #ccc; max-width: 600px; margin-left: auto; margin-right: auto; }
+  button { padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; border: none; background: #3498db; color: white; transition: background 0.3s; }
+  button:hover { background: #2980b9; }
+  #reward-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #reward-options > div {
+    border: 2px solid #333;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    background: white;
+  }
+  #hacks-tips {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px dashed #f39c12;
+    border-radius: 8px;
+    background: #fff8e1;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hacks-tips h2 {
+    color: #d35400;
+    margin-bottom: 10px;
+  }
+  #hacks-tips ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding-left: 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to RoboRewards</h1>
+  <p>Watch ads, fill surveys, refer friends, and earn Robux!</p>
+</header>
+
+<section class="ad-banner" id="banner-ad">
+  <!-- Placeholder for Banner Ad -->
+  <strong>Banner Ad</strong><br/>
+  <small>(Ad code goes here)</small>
+</section>
+
+<section class="referral">
+  <h2>Referral Link</h2>
+  Your referral code: <span id="referralCode">N/A</span><br/>
+  Share this link with your friends: <a href="#" id="referralLink" target="_blank">N/A</a>
+</section>
+
+<section id="reward-options">
+  <div>
+    <h3>Add a Friend</h3>
+    <p>Refer friends and get bonus Robux rewards!</p>
+    <button onclick="alert('Share your referral link to get bonuses!')">Refer Now</button>
+  </div>
+
+  <div>
+    <h3>Watch Ads</h3>
+    <p>Watch videos and earn Robux easily.</p>
+    <button onclick="alert('Thanks for watching! You earned Robux.')">Watch Ad</button>
+  </div>
+
+  <div>
+    <h3>Do Surveys</h3>
+    <p>Complete surveys to earn bigger rewards.</p>
+    <button onclick="window.open('https://example-survey-site.com', '_blank')">Take Survey</button>
+  </div>
+
+  <div>
+    <h3>Click Ads</h3>
+    <p>Click ads to support and get rewards.</p>
+    <button onclick="alert('Thanks for clicking! You earned Robux.')">Click Ad</button>
+  </div>
+</section>
+
+<section id="hacks-tips">
+  <h2>🔥 Hacks & Tips to Get Robux Faster 🔥</h2>
+  <ul>
+    <li>🎯 Watch multiple ads back-to-back to stack up rewards quickly.</li>
+    <li>👫 Refer friends — every invite boosts your bonus Robux.</li>
+    <li>📝 Complete surveys with high payouts for big jumps in Robux.</li>
+    <li>⚡ Click ads regularly — even small rewards add up fast.</li>
+    <li>🔄 Refresh the site daily — new offers and ads appear all the time.</li>
+  </ul>
+</section>
+
+<script>
+// Referral tracking with URL parameter ?ref=CODE
+const urlParams = new URLSearchParams(window.location.search);
+const refCode = urlParams.get('ref') || 'yourname123';
+document.getElementById('referralCode').textContent = refCode;
+const referralUrl = `${window.location.origin}${window.location.pathname}?ref=${refCode}`;
+const referralLinkElem = document.getElementById('referralLink');
+referralLinkElem.href = referralUrl;
+referralLinkElem.textContent = referralUrl;
+</script>
+
+</body>
+</html>
